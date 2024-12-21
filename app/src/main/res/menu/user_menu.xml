@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Trang cá nhân" android:id="@+id/usermenu_item_trangcanhan"/>
+    <item android:title="Nhắn tin" android:id="@+id/usermenu_item_nhantin"/>
+</menu>

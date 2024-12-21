@@ -3,11 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context="com.thicuoiky124.lttd03.nhom07.MainActivity"
     android:id="@+id/main">
 
-    <com.thicuoiky124.lttd03.nhom07.CustomViewPager
+    <com.thicuoiky124.lttd03.nhom07.Customize.CustomViewPager
         android:id="@+id/main_viewpager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
+
 </RelativeLayout>
