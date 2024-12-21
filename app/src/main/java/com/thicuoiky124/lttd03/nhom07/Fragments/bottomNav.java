@@ -10,10 +10,11 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
 
-import com.example.albumia.Adapters.ViewPageAdapter;
-import com.example.albumia.MainActivity;
+
 import com.example.albumia.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.thicuoiky124.lttd03.nhom07.Adapters.ViewPageAdapter;
+import com.thicuoiky124.lttd03.nhom07.MainActivity;
 
 public class bottomNav extends Fragment {
     private ViewPager viewPager;

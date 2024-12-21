@@ -8,8 +8,9 @@ import android.widget.Button;
 
 import androidx.fragment.app.Fragment;
 
-import com.example.albumia.MainActivity;
+
 import com.example.albumia.R;
+import com.thicuoiky124.lttd03.nhom07.MainActivity;
 
 public class about extends Fragment {
     @Override
