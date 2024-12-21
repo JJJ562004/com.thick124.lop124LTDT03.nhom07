@@ -30,16 +30,11 @@ public class MainActivity extends AppCompatActivity {
 
         customViewPager = findViewById(R.id.main_viewpager);
         ViewPageAdapter adapter = new ViewPageAdapter(getSupportFragmentManager());
-        adapter.addFragment(new login()); //0
-        adapter.addFragment(new signup()); //1
         adapter.addFragment(new bottomNav()); //2
-        adapter.addFragment(new comment_section()); //3
         adapter.addFragment(new CameraFragment()); //4
         adapter.addFragment(new them_anh()); //5
         adapter.addFragment(new uploadedimage()); //6
         adapter.addFragment(new ThemthongtinanhActivity()); //7
-        adapter.addFragment(new ThongbaoActivity()); //8
-        adapter.addFragment((new about())); //9
 
         customViewPager.setAdapter(adapter);
         customViewPager.setSwipeEnabled(false);
