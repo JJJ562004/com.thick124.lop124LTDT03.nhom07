@@ -8,3 +8,8 @@
   - layout_[Ten_Layout].xml
   - fragment_[Ten_Fragment_Of_Layout].java
   - vvv...
+## Cách chạy
+* Mở apps
+* Màn hình tự động vào trang chủ
+* Ấn nút để nhảy trang[, có thể qua cá nhân
+* Trong trang cá nhân có thể thêm sửa xóa.
