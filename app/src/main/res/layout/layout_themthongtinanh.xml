@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:backgroundTint="@color/white"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:backgroundTint="@color/white"
+        android:background="@color/white">
+
+        <Button
+            android:id="@+id/themthongtinanh_button18"
+            android:layout_width="76dp"
+            android:layout_height="55dp"
+            android:background="@android:drawable/btn_dialog"
+            android:backgroundTint="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.05"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.018" />
+
+        <TextView
+            android:id="@+id/themthongtinanh_textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tạo bài đăng"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.121"
+            app:layout_constraintStart_toEndOf="@+id/themthongtinanh_button18"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.018" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/themthongtinanh_textView9"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:hint="Nhập tên ảnh"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/white"
+        android:background="@color/white"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:backgroundTint="@color/white"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/themthongtinanh_imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            app:srcCompat="@drawable/thiennhien1" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+
+        <Button
+            android:id="@+id/themthongtinanh_button19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#009688"
+            android:text="Đăng ảnh"
+            android:textSize="34sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

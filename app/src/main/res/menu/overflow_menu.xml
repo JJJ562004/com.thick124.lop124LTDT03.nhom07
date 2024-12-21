@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item  android:title="Ảnh đã thích" android:id="@+id/overflow_menu_like_image"/>
+    <item android:title="Ảnh đã đăng" android:id="@+id/overflow_menu_upimage"/>
+    <item android:title="Đang theo dõi" android:id="@+id/overflow_menu_following"/>
+    <item android:title="Quản lý tài khoản" android:id="@+id/overflow_menu_profile"/>
+    <item android:title="Đăng xuất" android:id="@+id/overflow_menu_signout"/>
+</menu>

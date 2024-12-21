@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/homepage_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/homepage_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- RecyclerView for displaying images -->
+        <!-- Header with SearchBar and Icons -->
+        <LinearLayout
+            android:id="@+id/homepage_header"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <!-- Search Bar -->
+            <EditText
+                android:id="@+id/searchBar"
+                android:textSize="20sp"
+                android:layout_marginEnd="20dp"
+                android:layout_width="250dp"
+                android:layout_gravity="center"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:paddingStart="20dp"
+                android:drawableStart="@drawable/ic_search"
+                android:background="@drawable/corner_round_search"
+                android:drawablePadding="8dp"
+                android:hint="Tìm chủ đề"
+                android:textColor="@color/black" />
+
+            <!-- Overflow Menu Icon -->
+            <ImageView
+                android:id="@+id/homepage_overflow_menu"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_lock" />
+
+            <!-- Bell Icon -->
+            <ImageView
+                android:id="@+id/homepage_bell"
+                android:layout_gravity="center"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_bell" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/homepage_category"
+            app:layout_constraintTop_toBottomOf="@id/homepage_header">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/grey"
+                android:text="Dong vat"
+                android:textColor="@color/black"
+                android:layout_marginStart="12dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/grey"
+                android:text="Cuoc song"
+                android:textColor="@color/black"
+                android:layout_marginStart="8dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/grey"
+                android:text="Cay co"
+                android:textColor="@color/black"
+                android:layout_marginStart="8dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/grey"
+                android:text="..."
+                android:textColor="@color/black"
+                android:layout_marginStart="4dp"/>
+        </LinearLayout>
+
+        <!-- Bottom Navigation -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/homepage_recyclerview"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:padding="8dp"
+            android:scrollbars="vertical"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/homepage_category"
+            app:layout_constraintVertical_bias="0.0"
+            app:spanCount="2" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
